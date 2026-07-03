@@ -14,31 +14,55 @@ WebScan-Automator is a simple, automated Python-based directory scanner designed
    git clone [https://github.com/yourusername/WebScan-Automator.git](https://github.com/yourusername/WebScan-Automator.git)
    cd WebScan-Automator
 
-## Installation
-Ensure you have the `requests` library installed:
+```
+
+2. Ensure you have the `requests` library installed:
 ```bash
 pip install requests
 
-Usage
+```
+
+
+
+## Usage
+
 Run the script using the following command structure:
 
-Bash
+```bash
 python3 scanner.py <target-url> [options]
-Examples
-Basic Scan:
-Bash
+
+```
+
+## Examples
+
+### Basic Scan:
+
+```bash
 python3 scanner.py [https://example.com](https://example.com)
-Scan with a custom wordlist:
-Bash
+
+```
+
+### Scan with a custom wordlist:
+
+```bash
 python3 scanner.py [https://example.com](https://example.com) -w paths.txt
-Advanced Scan (with delay and timeout):
-Bash
+
+```
+
+### Advanced Scan (with delay and timeout):
+
+```bash
 python3 scanner.py [https://example.com](https://example.com) -t 10 -d 0.5 -o results.txt
-Options
--w, --wordlist: Path to your wordlist file.
 
--t, --timeout: Request timeout in seconds (default: 5).
+```
 
--d, --delay: Delay between requests in seconds (default: 0.3).
+## Options
 
--o, --output: File to save the discovered paths (default: found_results.txt).
+* `-w`, `--wordlist`: Path to your wordlist file.
+* `-t`, `--timeout`: Request timeout in seconds (default: 5).
+* `-d`, `--delay`: Delay between requests in seconds (default: 0.3).
+* `-o`, `--output`: File to save the discovered paths (default: found_results.txt).
+
+## Disclaimer
+
+This tool is for **educational and ethical security testing purposes only**. Always ensure you have explicit permission from the website owner before scanning. The author is not responsible for any misuse of this tool.
